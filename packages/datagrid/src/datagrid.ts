@@ -1913,6 +1913,13 @@ export class DataGrid extends Widget {
   }
 
   /**
+   * Reads the text from the clipboard, parses it, and updates/creates the grid accordingly.
+   */
+  pasteFromClipboard(callback: (text: string) => void): void {
+    ClipboardExt.pasteText(callback);
+  }
+
+  /**
    * Process a message sent to the widget.
    *
    * @param msg - The message sent to the widget.

@@ -7,6 +7,7 @@
 // @public
 export namespace ClipboardExt {
     export function copyText(text: string): void;
+    export function pasteText(callback: (text: string) => void): void;
 }
 
 // @public
